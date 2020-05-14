@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F701E405243953C6004B9586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E404243953C6004B9586 /* AppDelegate.swift */; };
+		F701E407243953C6004B9586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E406243953C6004B9586 /* SceneDelegate.swift */; };
+		F701E409243953C6004B9586 /* InfectedListByCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E408243953C6004B9586 /* InfectedListByCountryViewController.swift */; };
+		F701E40E243953C9004B9586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F701E40D243953C9004B9586 /* Assets.xcassets */; };
+		F701E411243953C9004B9586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F701E40F243953C9004B9586 /* LaunchScreen.storyboard */; };
+		F701E41E24395D3D004B9586 /* HistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E41D24395D3D004B9586 /* HistoryResponse.swift */; };
+		F701E42124395D5E004B9586 /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E42024395D5E004B9586 /* CountryData.swift */; };
+		F701E42324395D74004B9586 /* InfectedCountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E42224395D74004B9586 /* InfectedCountryData.swift */; };
+		F701E429243966D6004B9586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F701E428243966D6004B9586 /* Main.storyboard */; };
+		F701E42C24396CA5004B9586 /* InfectedByCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E42A24396CA5004B9586 /* InfectedByCountryCell.swift */; };
+		F701E42D24396CA5004B9586 /* InfectedByCountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F701E42B24396CA5004B9586 /* InfectedByCountryCell.xib */; };
+		F701E436243A49AC004B9586 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E435243A49AC004B9586 /* NetworkError.swift */; };
+		F701E438243A49C3004B9586 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E437243A49C3004B9586 /* NetworkResult.swift */; };
+		F701E43A243A49D3004B9586 /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E439243A49D3004B9586 /* NetworkMethod.swift */; };
+		F701E43C243A49E0004B9586 /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E43B243A49E0004B9586 /* NetworkResource.swift */; };
+		F701E43E243A49F2004B9586 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E43D243A49F2004B9586 /* APIClient.swift */; };
+		F701E440243A4CB2004B9586 /* InfectedListByCountryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E43F243A4CB2004B9586 /* InfectedListByCountryDataService.swift */; };
+		F701E442243A591F004B9586 /* InfectedListByCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E441243A591F004B9586 /* InfectedListByCountryViewModel.swift */; };
+		F701E444243A86D2004B9586 /* ULoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E443243A86D2004B9586 /* ULoaderManager.swift */; };
+		F701E44C243C0D0F004B9586 /* CountryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E44B243C0D0F004B9586 /* CountryListTableViewController.swift */; };
+		F701E44E243C0D74004B9586 /* CountryListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E44D243C0D74004B9586 /* CountryListDataService.swift */; };
+		F701E451243D3239004B9586 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E450243D3239004B9586 /* UIView+Extension.swift */; };
+		F701E453243D3292004B9586 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E452243D3292004B9586 /* UIViewController+Extension.swift */; };
+		F701E455243D3B86004B9586 /* CountrySearchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E454243D3B86004B9586 /* CountrySearchAdapter.swift */; };
+		F701E458243D5F6E004B9586 /* CountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E457243D5F6E004B9586 /* CountryResponse.swift */; };
+		F701E45C243D6169004B9586 /* ReusedAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E45B243D6169004B9586 /* ReusedAttributes.swift */; };
+		F701E45E243D63C6004B9586 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E45D243D63C6004B9586 /* CountryListViewModel.swift */; };
+		F7562EBE244F9F6E00B552E4 /* InfectedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562EBC244F9F6E00B552E4 /* InfectedMapViewController.swift */; };
+		F7562EBF244F9F6E00B552E4 /* InfectedMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7562EBD244F9F6E00B552E4 /* InfectedMapViewController.xib */; };
+		F7562EC224534A4E00B552E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562EC124534A4E00B552E4 /* ViewController.swift */; };
+		F7562EC42455699E00B552E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562EC32455699E00B552E4 /* Constants.swift */; };
+		F7562EC7245569D700B552E4 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562EC6245569D700B552E4 /* BottomSheet.swift */; };
+		F7562ECA2457572400B552E4 /* InfectedMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562EC92457572400B552E4 /* InfectedMapViewModel.swift */; };
+		F7562ECD2457586800B552E4 /* InfectedMapDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562ECC2457586800B552E4 /* InfectedMapDataService.swift */; };
+		F7562ED0245759BA00B552E4 /* FeatureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562ECF245759BA00B552E4 /* FeatureResponse.swift */; };
+		F7562ED224575D9100B552E4 /* FeatureCountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7562ED124575D9100B552E4 /* FeatureCountryData.swift */; };
+		F7E3BF26244B803E0060FFA5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3BF25244B803E0060FFA5 /* String+Extension.swift */; };
+		F7E3BF28244B80640060FFA5 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3BF27244B80640060FFA5 /* Int+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F701E401243953C6004B9586 /* COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F701E404243953C6004B9586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F701E406243953C6004B9586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F701E408243953C6004B9586 /* InfectedListByCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedListByCountryViewController.swift; sourceTree = "<group>"; };
+		F701E40D243953C9004B9586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F701E410243953C9004B9586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F701E412243953C9004B9586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F701E41D24395D3D004B9586 /* HistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryResponse.swift; sourceTree = "<group>"; };
+		F701E42024395D5E004B9586 /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		F701E42224395D74004B9586 /* InfectedCountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedCountryData.swift; sourceTree = "<group>"; };
+		F701E428243966D6004B9586 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F701E42A24396CA5004B9586 /* InfectedByCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedByCountryCell.swift; sourceTree = "<group>"; };
+		F701E42B24396CA5004B9586 /* InfectedByCountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfectedByCountryCell.xib; sourceTree = "<group>"; };
+		F701E435243A49AC004B9586 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F701E437243A49C3004B9586 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F701E439243A49D3004B9586 /* NetworkMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		F701E43B243A49E0004B9586 /* NetworkResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResource.swift; sourceTree = "<group>"; };
+		F701E43D243A49F2004B9586 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F701E43F243A4CB2004B9586 /* InfectedListByCountryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedListByCountryDataService.swift; sourceTree = "<group>"; };
+		F701E441243A591F004B9586 /* InfectedListByCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedListByCountryViewModel.swift; sourceTree = "<group>"; };
+		F701E443243A86D2004B9586 /* ULoaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULoaderManager.swift; sourceTree = "<group>"; };
+		F701E44B243C0D0F004B9586 /* CountryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTableViewController.swift; sourceTree = "<group>"; };
+		F701E44D243C0D74004B9586 /* CountryListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListDataService.swift; sourceTree = "<group>"; };
+		F701E450243D3239004B9586 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F701E452243D3292004B9586 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F701E454243D3B86004B9586 /* CountrySearchAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchAdapter.swift; sourceTree = "<group>"; };
+		F701E457243D5F6E004B9586 /* CountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryResponse.swift; sourceTree = "<group>"; };
+		F701E45B243D6169004B9586 /* ReusedAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusedAttributes.swift; sourceTree = "<group>"; };
+		F701E45D243D63C6004B9586 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		F7562EBC244F9F6E00B552E4 /* InfectedMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedMapViewController.swift; sourceTree = "<group>"; };
+		F7562EBD244F9F6E00B552E4 /* InfectedMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfectedMapViewController.xib; sourceTree = "<group>"; };
+		F7562EC124534A4E00B552E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7562EC32455699E00B552E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F7562EC6245569D700B552E4 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		F7562EC92457572400B552E4 /* InfectedMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedMapViewModel.swift; sourceTree = "<group>"; };
+		F7562ECC2457586800B552E4 /* InfectedMapDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedMapDataService.swift; sourceTree = "<group>"; };
+		F7562ECF245759BA00B552E4 /* FeatureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureResponse.swift; sourceTree = "<group>"; };
+		F7562ED124575D9100B552E4 /* FeatureCountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCountryData.swift; sourceTree = "<group>"; };
+		F7E3BF25244B803E0060FFA5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F7E3BF27244B80640060FFA5 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F701E3FE243953C6004B9586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F701E3F8243953C6004B9586 = {
+			isa = PBXGroup;
+			children = (
+				F701E403243953C6004B9586 /* Covid19Peru */,
+				F701E402243953C6004B9586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F701E402243953C6004B9586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F701E401243953C6004B9586 /* COVID-19.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F701E403243953C6004B9586 /* Covid19Peru */ = {
+			isa = PBXGroup;
+			children = (
+				F701E404243953C6004B9586 /* AppDelegate.swift */,
+				F701E406243953C6004B9586 /* SceneDelegate.swift */,
+				F701E41824395519004B9586 /* Utils */,
+				F701E41C2439554F004B9586 /* Model */,
+				F701E41B24395546004B9586 /* View */,
+				F701E41A2439553F004B9586 /* ViewModel */,
+				F701E430243A4885004B9586 /* Network */,
+				F701E40D243953C9004B9586 /* Assets.xcassets */,
+				F701E40F243953C9004B9586 /* LaunchScreen.storyboard */,
+				F701E412243953C9004B9586 /* Info.plist */,
+			);
+			path = Covid19Peru;
+			sourceTree = "<group>";
+		};
+		F701E41824395519004B9586 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7562EC32455699E00B552E4 /* Constants.swift */,
+				F701E443243A86D2004B9586 /* ULoaderManager.swift */,
+				F701E44F243D320E004B9586 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F701E41A2439553F004B9586 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F701E449243C0C65004B9586 /* Country List */,
+				F701E44A243C0C71004B9586 /* Infected List By Country */,
+				F7562EC8245756FA00B552E4 /* Infected Map */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F701E41B24395546004B9586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F701E424243963E6004B9586 /* Storyboard */,
+				F701E4272439642B004B9586 /* Controller */,
+				F701E42624396420004B9586 /* Cell */,
+				F701E42524396418004B9586 /* Xib */,
+				F7562EC124534A4E00B552E4 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F701E41C2439554F004B9586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F701E45A243D6070004B9586 /* Attributes Protocol */,
+				F701E456243D5F55004B9586 /* Country List */,
+				F701E459243D6052004B9586 /* Infected List By Country */,
+				F7562ECE2457589F00B552E4 /* Infected Map */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F701E424243963E6004B9586 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F701E428243966D6004B9586 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F701E42524396418004B9586 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				F7562EC0244F9F8800B552E4 /* Infected Map */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		F701E42624396420004B9586 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F701E447243C0BFA004B9586 /* Country List */,
+				F701E448243C0C02004B9586 /* Infected List By Country */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F701E4272439642B004B9586 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F701E445243C0BD7004B9586 /* Country List */,
+				F701E446243C0BE4004B9586 /* Infected List By Country */,
+				F7562EBB244F9F3900B552E4 /* Infected Map */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F701E430243A4885004B9586 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F701E434243A48D3004B9586 /* Resource */,
+				F701E433243A48C7004B9586 /* Method */,
+				F701E432243A48C2004B9586 /* Response */,
+				F701E431243A48B7004B9586 /* Error */,
+				F701E43D243A49F2004B9586 /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F701E431243A48B7004B9586 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F701E435243A49AC004B9586 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F701E432243A48C2004B9586 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F701E437243A49C3004B9586 /* NetworkResult.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		F701E433243A48C7004B9586 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				F701E439243A49D3004B9586 /* NetworkMethod.swift */,
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+		F701E434243A48D3004B9586 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F701E43B243A49E0004B9586 /* NetworkResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F701E445243C0BD7004B9586 /* Country List */ = {
+			isa = PBXGroup;
+			children = (
+				F701E44B243C0D0F004B9586 /* CountryListTableViewController.swift */,
+				F701E44D243C0D74004B9586 /* CountryListDataService.swift */,
+			);
+			path = "Country List";
+			sourceTree = "<group>";
+		};
+		F701E446243C0BE4004B9586 /* Infected List By Country */ = {
+			isa = PBXGroup;
+			children = (
+				F7562ECB2457582100B552E4 /* Adapter */,
+				F701E408243953C6004B9586 /* InfectedListByCountryViewController.swift */,
+				F701E43F243A4CB2004B9586 /* InfectedListByCountryDataService.swift */,
+			);
+			path = "Infected List By Country";
+			sourceTree = "<group>";
+		};
+		F701E447243C0BFA004B9586 /* Country List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Country List";
+			sourceTree = "<group>";
+		};
+		F701E448243C0C02004B9586 /* Infected List By Country */ = {
+			isa = PBXGroup;
+			children = (
+				F701E42A24396CA5004B9586 /* InfectedByCountryCell.swift */,
+				F701E42B24396CA5004B9586 /* InfectedByCountryCell.xib */,
+			);
+			path = "Infected List By Country";
+			sourceTree = "<group>";
+		};
+		F701E449243C0C65004B9586 /* Country List */ = {
+			isa = PBXGroup;
+			children = (
+				F701E45D243D63C6004B9586 /* CountryListViewModel.swift */,
+			);
+			path = "Country List";
+			sourceTree = "<group>";
+		};
+		F701E44A243C0C71004B9586 /* Infected List By Country */ = {
+			isa = PBXGroup;
+			children = (
+				F701E441243A591F004B9586 /* InfectedListByCountryViewModel.swift */,
+			);
+			path = "Infected List By Country";
+			sourceTree = "<group>";
+		};
+		F701E44F243D320E004B9586 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F701E450243D3239004B9586 /* UIView+Extension.swift */,
+				F701E452243D3292004B9586 /* UIViewController+Extension.swift */,
+				F7E3BF25244B803E0060FFA5 /* String+Extension.swift */,
+				F7E3BF27244B80640060FFA5 /* Int+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F701E456243D5F55004B9586 /* Country List */ = {
+			isa = PBXGroup;
+			children = (
+				F701E457243D5F6E004B9586 /* CountryResponse.swift */,
+			);
+			path = "Country List";
+			sourceTree = "<group>";
+		};
+		F701E459243D6052004B9586 /* Infected List By Country */ = {
+			isa = PBXGroup;
+			children = (
+				F701E41D24395D3D004B9586 /* HistoryResponse.swift */,
+				F701E42024395D5E004B9586 /* CountryData.swift */,
+				F701E42224395D74004B9586 /* InfectedCountryData.swift */,
+			);
+			path = "Infected List By Country";
+			sourceTree = "<group>";
+		};
+		F701E45A243D6070004B9586 /* Attributes Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F701E45B243D6169004B9586 /* ReusedAttributes.swift */,
+			);
+			path = "Attributes Protocol";
+			sourceTree = "<group>";
+		};
+		F7562EBB244F9F3900B552E4 /* Infected Map */ = {
+			isa = PBXGroup;
+			children = (
+				F7562EC5245569C400B552E4 /* Adapter */,
+				F7562EBC244F9F6E00B552E4 /* InfectedMapViewController.swift */,
+				F7562ECC2457586800B552E4 /* InfectedMapDataService.swift */,
+			);
+			path = "Infected Map";
+			sourceTree = "<group>";
+		};
+		F7562EC0244F9F8800B552E4 /* Infected Map */ = {
+			isa = PBXGroup;
+			children = (
+				F7562EBD244F9F6E00B552E4 /* InfectedMapViewController.xib */,
+			);
+			path = "Infected Map";
+			sourceTree = "<group>";
+		};
+		F7562EC5245569C400B552E4 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				F7562EC6245569D700B552E4 /* BottomSheet.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		F7562EC8245756FA00B552E4 /* Infected Map */ = {
+			isa = PBXGroup;
+			children = (
+				F7562EC92457572400B552E4 /* InfectedMapViewModel.swift */,
+			);
+			path = "Infected Map";
+			sourceTree = "<group>";
+		};
+		F7562ECB2457582100B552E4 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				F701E454243D3B86004B9586 /* CountrySearchAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		F7562ECE2457589F00B552E4 /* Infected Map */ = {
+			isa = PBXGroup;
+			children = (
+				F7562ECF245759BA00B552E4 /* FeatureResponse.swift */,
+				F7562ED124575D9100B552E4 /* FeatureCountryData.swift */,
+			);
+			path = "Infected Map";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F701E400243953C6004B9586 /* Covid19Peru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F701E415243953C9004B9586 /* Build configuration list for PBXNativeTarget "Covid19Peru" */;
+			buildPhases = (
+				F701E3FD243953C6004B9586 /* Sources */,
+				F701E3FE243953C6004B9586 /* Frameworks */,
+				F701E3FF243953C6004B9586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Covid19Peru;
+			productName = Covid19Peru;
+			productReference = F701E401243953C6004B9586 /* COVID-19.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F701E3F9243953C6004B9586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Smith Huamaní Hilario";
+				TargetAttributes = {
+					F701E400243953C6004B9586 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F701E3FC243953C6004B9586 /* Build configuration list for PBXProject "Covid19Peru" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F701E3F8243953C6004B9586;
+			productRefGroup = F701E402243953C6004B9586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F701E400243953C6004B9586 /* Covid19Peru */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F701E3FF243953C6004B9586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F701E429243966D6004B9586 /* Main.storyboard in Resources */,
+				F7562EBF244F9F6E00B552E4 /* InfectedMapViewController.xib in Resources */,
+				F701E411243953C9004B9586 /* LaunchScreen.storyboard in Resources */,
+				F701E40E243953C9004B9586 /* Assets.xcassets in Resources */,
+				F701E42D24396CA5004B9586 /* InfectedByCountryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F701E3FD243953C6004B9586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7562ECD2457586800B552E4 /* InfectedMapDataService.swift in Sources */,
+				F701E455243D3B86004B9586 /* CountrySearchAdapter.swift in Sources */,
+				F701E41E24395D3D004B9586 /* HistoryResponse.swift in Sources */,
+				F7562ED224575D9100B552E4 /* FeatureCountryData.swift in Sources */,
+				F701E45E243D63C6004B9586 /* CountryListViewModel.swift in Sources */,
+				F701E436243A49AC004B9586 /* NetworkError.swift in Sources */,
+				F701E43C243A49E0004B9586 /* NetworkResource.swift in Sources */,
+				F701E45C243D6169004B9586 /* ReusedAttributes.swift in Sources */,
+				F701E42C24396CA5004B9586 /* InfectedByCountryCell.swift in Sources */,
+				F701E44E243C0D74004B9586 /* CountryListDataService.swift in Sources */,
+				F7562ED0245759BA00B552E4 /* FeatureResponse.swift in Sources */,
+				F701E438243A49C3004B9586 /* NetworkResult.swift in Sources */,
+				F701E42124395D5E004B9586 /* CountryData.swift in Sources */,
+				F7E3BF28244B80640060FFA5 /* Int+Extension.swift in Sources */,
+				F7562EC42455699E00B552E4 /* Constants.swift in Sources */,
+				F701E44C243C0D0F004B9586 /* CountryListTableViewController.swift in Sources */,
+				F701E42324395D74004B9586 /* InfectedCountryData.swift in Sources */,
+				F701E440243A4CB2004B9586 /* InfectedListByCountryDataService.swift in Sources */,
+				F701E409243953C6004B9586 /* InfectedListByCountryViewController.swift in Sources */,
+				F701E453243D3292004B9586 /* UIViewController+Extension.swift in Sources */,
+				F7562ECA2457572400B552E4 /* InfectedMapViewModel.swift in Sources */,
+				F701E405243953C6004B9586 /* AppDelegate.swift in Sources */,
+				F7E3BF26244B803E0060FFA5 /* String+Extension.swift in Sources */,
+				F701E442243A591F004B9586 /* InfectedListByCountryViewModel.swift in Sources */,
+				F7562EBE244F9F6E00B552E4 /* InfectedMapViewController.swift in Sources */,
+				F701E407243953C6004B9586 /* SceneDelegate.swift in Sources */,
+				F7562EC224534A4E00B552E4 /* ViewController.swift in Sources */,
+				F701E458243D5F6E004B9586 /* CountryResponse.swift in Sources */,
+				F7562EC7245569D700B552E4 /* BottomSheet.swift in Sources */,
+				F701E43A243A49D3004B9586 /* NetworkMethod.swift in Sources */,
+				F701E444243A86D2004B9586 /* ULoaderManager.swift in Sources */,
+				F701E451243D3239004B9586 /* UIView+Extension.swift in Sources */,
+				F701E43E243A49F2004B9586 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F701E40F243953C9004B9586 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F701E410243953C9004B9586 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F701E413243953C9004B9586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F701E414243953C9004B9586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F701E416243953C9004B9586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YW222DRQW;
+				INFOPLIST_FILE = Covid19Peru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huamani.covid19app;
+				PRODUCT_NAME = "COVID-19";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F701E417243953C9004B9586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YW222DRQW;
+				INFOPLIST_FILE = Covid19Peru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huamani.covid19app;
+				PRODUCT_NAME = "COVID-19";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F701E3FC243953C6004B9586 /* Build configuration list for PBXProject "Covid19Peru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F701E413243953C9004B9586 /* Debug */,
+				F701E414243953C9004B9586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F701E415243953C9004B9586 /* Build configuration list for PBXNativeTarget "Covid19Peru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F701E416243953C9004B9586 /* Debug */,
+				F701E417243953C9004B9586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F701E3F9243953C6004B9586 /* Project object */;
+}

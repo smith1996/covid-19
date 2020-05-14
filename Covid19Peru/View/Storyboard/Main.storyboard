@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cgH-82-sLW">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="A8T-OO-Dx4">
+            <objects>
+                <navigationController id="cgH-82-sLW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AZh-78-oyW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XNT-Nf-Vgg" kind="relationship" relationship="rootViewController" id="0Zt-0B-Y74"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dU-fB-KE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1626" y="-600"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Dcq-2R-sLe">
+            <objects>
+                <viewController id="xCm-f2-wAG" customClass="ViewController" customModule="COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9id-lF-zrO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fH2-rE-a7f">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hmR-jF-cMG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgB-Me-EDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1267.5" y="191.19718309859155"/>
+        </scene>
+        <!--Lista de países-->
+        <scene sceneID="Po3-Kf-UzA">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="XNT-Nf-Vgg" customClass="CountryListTableViewController" customModule="COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VnM-3h-6HE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="XNT-Nf-Vgg" id="KVO-QF-oVQ"/>
+                            <outlet property="delegate" destination="XNT-Nf-Vgg" id="VOB-QF-bQg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de países" id="UpQ-Hd-dfq"/>
+                    <connections>
+                        <segue destination="zDi-16-vAS" kind="push" identifier="goInfectedHistory" id="rfL-X4-rVN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HD-dw-s5l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-796" y="-600"/>
+        </scene>
+        <!--Infected List By Country View Controller-->
+        <scene sceneID="9o5-S3-7Dn">
+            <objects>
+                <viewController storyboardIdentifier="InfectedListByCountryViewController" id="zDi-16-vAS" customClass="InfectedListByCountryViewController" customModule="COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yiT-Z0-KRt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-W1-kzG">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wQH-W1-kzG" firstAttribute="leading" secondItem="Uyc-1e-sNf" secondAttribute="leading" id="Bl6-6h-tbp"/>
+                            <constraint firstItem="wQH-W1-kzG" firstAttribute="top" secondItem="Uyc-1e-sNf" secondAttribute="top" id="PRh-X8-RbC"/>
+                            <constraint firstAttribute="bottom" secondItem="wQH-W1-kzG" secondAttribute="bottom" id="PfB-FX-6rV"/>
+                            <constraint firstItem="wQH-W1-kzG" firstAttribute="trailing" secondItem="Uyc-1e-sNf" secondAttribute="trailing" id="gSY-k3-Ycx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uyc-1e-sNf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ALY-v5-cRL"/>
+                    <connections>
+                        <outlet property="infectedByCountryTableView" destination="wQH-W1-kzG" id="nnr-ah-Wjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXb-PC-xIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="-600"/>
+        </scene>
+    </scenes>
+</document>
